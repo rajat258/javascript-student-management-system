@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <script src="./studentManagementSystem.js"></script>
+    <link rel="stylesheet" type="text/css" href="./studentManagementSystem.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body style="width: 100vw; height: 100vh;" onload="onload()">
+    <form id="container">
+        <!-- Heading -->
+        <h2>Student Application</h2>
+
+        <!-- Input Entries with Add button -->
+        <table id="input_table">
+            <tr id="tr_1">
+                <td class="td1">
+                    <h3>Name</h3>
+                </td>
+                <td class="td1">
+                    <h3>City</h3>
+                </td>
+                <td class="td1">
+                    <h3>Fees</h3>
+                </td>
+            </tr>
+            <tr id="tr_2">
+                <td class="td1">
+                    <input id="input_name" />
+                </td>
+                <td class="td1">
+                    <input id="input_city" />
+                </td>
+                <td class="td1">
+                    <input id="input_fees" />
+                </td>
+                <td class="td1">
+                    <input type="button" id="Add_Save_button" value="Add/Save" />
+                </td>
+            </tr>
+        </table>
+
+        <h2 style="margin-top: 30px;">Student List</h2>
+        <table style="border-collapse: collapse;margin-left: 10%;">
+            <tr>
+                <td class="tdd" style="padding-left: 10px;padding-right: 10px;">
+                    <h3>No.</h3>
+                </td>
+                <td class="tdd" style="padding-left: 35px;padding-right: 35px;">
+                    <h3>Name</h3>
+                </td>
+                <td class="tdd" style="padding-left: 35px;padding-right: 35px;">
+                    <h3>City</h3>
+                </td>
+                <td class="tdd" style="padding-left: 35px;padding-right: 35px;">
+                    <h3>Fees</h3>
+                </td>
+                <td class="tdd" style="padding-left: 50px;padding-right: 50px;">
+                    <h3>Action</h3>
+                </td>
+            </tr>
+            <tbody id="main_table">
+                <!-- Dynamic Table adding -->
+            </tbody>
+        </table>
+        <!-- Statistics -->
+        <h2>Statistics</h2>
+
+        <ol>
+            <li>Total fees:<p id="totalFee"> </p>
+            </li>
+            <li>Total number of students:<p id="totalStudent"> </p>
+            </li>
+            <li>Number of students whose name starts from “R”:<p id="R"> </p>
+            </li>
+            <li>City name of 4th student: <p id="cityName4"> </p>
+            </li>
+            <li>Total fees of 3rd and 5th student:<p id="fee1"> </p>
+            </li>
+            <li>Number of students whose fees is in between $2000 and $3900: <p id="feebtwn"> </p>
+            </li>
+            <li>Number of students whose fees is < $1000: <p id="fee2">
+                    </p>
+            </li>
+            <li>Number of students whose name starts from “S” AND City name starts from “Ch”: <p id="SCh">
+                </p>
+            </li>
+            <li>Number of students whose name starts from “J” OR City name starts from “H”:<p id="JH">
+                </p>
+            </li>
+            <li>Find the Min and Max fees <p id="minMax"> </p>
+            </li>
+        </ol>
+    </form>
+</body>
+
+</html>
